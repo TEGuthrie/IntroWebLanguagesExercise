@@ -1,0 +1,16 @@
+<!--Creates button and input text objects-->
+<input id="name-input" type="text" placeholder="Enter your name" />
+<button id="my-button">Click Me</button>
+
+<script>
+//variables are created and set
+  var myButton = document.querySelector('#my-button');
+  var nameInput = document.querySelector('#name-input');
+
+  //Detects if button is clicked and creates an alert popup saying hello and the text input in the box.
+  myButton.addEventListener('click', function () {
+    if (nameInput.value !== '') {
+      alert('Hello ' + nameInput.value);
+    }
+  });
+</script>
